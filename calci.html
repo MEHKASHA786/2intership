@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .f {
+            height: 200px;
+            background-color: rgba(226,193,206);
+        }
+
+        .red {
+            border: solid;
+            text-align: center;
+            background-color: rgb(168,229,229);
+
+        }
+
+        .NO {
+            margin: 20px;
+        }
+
+        .red2 {
+            margin-top: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <fieldset class="f"> 
+        <legend> <h2>CALCULATOR</h2> </legend>
+        <div class="red">
+            ENTER FIRST NO.<input type="number" id="t1" class="NO">
+            ENTER SECOND NO.<input type="number" id="t2" class="NO">
+            RESULT<input type="display" id="r" class="NO" value="">
+        </div>
+
+        <div class="red2">
+            <select id="se" onchange="f1(this)">
+                <option value='cource'>Select</option>
+                <option value='a'>Addition</option>
+                <option value='b'>Subtraction</option>
+                <option value='c'>Multiply</option>
+                <option value='d'>Division</option>
+            </select>
+            <p id ="q"></p>
+        </div>
+
+
+    </fieldset>
+
+
+
+    <script src="calci.js"></script>
+</body>
+
+</html>
